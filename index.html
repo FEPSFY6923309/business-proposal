@@ -71,6 +71,9 @@
     <tr>
       <td><a href="#Pinq Ring">Pinq Ring</td>
     </tr>
+    <tr>
+      <td><a href="#Pinq Band">Pinq Band</td>
+    </tr>
     
   </table>
 
@@ -106,6 +109,37 @@ thirty seconds storing the location onto the clients mobile device.
     <h3 id="Products"> Products</h3>
     <h4 id="Pinq Ring"> Pinq Ring </h4>
     <img src="Ring concept.png" alt="Banner" width="200" height="200">
+    <p>
+      <pre>
+The Pinq Ring acts as a minimalistic 
+      </pre>
+    </p>
+    <input type="text" id="itemInput" placeholder="Enter item">
+  <button onclick="addItem()">Add Item</button>
+
+  <ul id="itemList"></ul>
+
+  <script>
+    function addItem() {
+      const input = document.getElementById("itemInput");
+      const value = input.value;
+
+      if (value.trim() === "") return;
+
+      const li = document.createElement("li");
+      li.textContent = value;
+
+      document.getElementById("itemList").appendChild(li);
+
+      input.value = ""; // clear input
+    }
+  </script>
+    <h4 id="Pinq Band"> Pinq Band </h4>
     <img src="bracelet concept.png" alt="Banner" width="325" height="300">
+    <p>
+      <pre>
+        
+      </pre>
+    </p>
   </body>
 </html>
