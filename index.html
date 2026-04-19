@@ -137,6 +137,20 @@ function subtract() {
         
       </pre>
     </p>
-   
+   <p id="counter2">0</p>
+<button onclick="add()">+1</button>
+<button onclick="subtract()">-1</button>
+<script>
+function add() {
+  let num1 = document.getElementById("counter2");
+  num1.textContent = Number(num1.textContent) + 1;
+}
+  </script>
+
+<script>
+function subtract() {
+  let num1 = document.getElementById("counter2");
+  num1.textContent = Number(num1.textContent) - 1;
+}
   </body>
 </html>
